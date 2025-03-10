@@ -1,0 +1,14 @@
+ /* Подключение стилей относящихся к header */
+@import"header.css";
+ /* Подключение стилей относящихся к main */
+@import"main.css";
+ /* Карточки "Что будем изучать?" */
+ @import"cards.css";
+ /* Блок достижения */
+ @import"features.css";
+  /* Блок проекты */
+  @import"projects.css";
+  /* Подвал Артема */
+  @import"footer.css";
+ /* Адаптивный дизайн */
+@import"adaptability.css";

@@ -1,0 +1,29 @@
+
+
+.cards{
+    padding-top: 50px;
+    
+}
+
+.cards h2 {
+    font-weight: 600;
+    font-size: 31px;
+
+}
+
+.cards__btn{
+    color: white;
+    background: #FA9F42;
+    border-radius: 5px;
+    padding: 12px 23px;
+    float: right;
+    padding-right: -100px;
+    display: block;
+    transition: all 500ms ease;
+    }
+
+.cards__btn:hover{
+    transform: scale(1.1);
+}
+
+ 
