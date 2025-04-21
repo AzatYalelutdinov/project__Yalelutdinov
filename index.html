@@ -5,177 +5,338 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Помощник учителя истории</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body class="body">
-    <div class="wrapper">
-        <header class="header">
-            <span class="logo">h-mentor</span>
-            <nav class="header__menu">
-                <ul class="menu">
-                    <li class="menu__item"><a class="menu__link" href="#" target="_blank"> Главная</a></li>
+    <div class="preloader">
+        <div class="dots">
+            <span style="--i:1;"></span>
+            <span style="--i:2;"></span>
+            <span style="--i:3;"></span>
+            <span style="--i:4;"></span>
+            <span style="--i:5;"></span>
+            <span style="--i:6;"></span>
+            <span style="--i:7;"></span>
+            <span style="--i:8;"></span>
+            <span style="--i:8;"></span>
+            <span style="--i:9;"></span>
+            <span style="--i:10;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:15;"></span>
+        </div>
+    </div>
+    <div class="content">
+        <div class="wrapper">
+            <header class="header">
+                <span class="logo">h-mentor</span>
+                <nav class="header__menu">
+                    <ul class="menu">
+                        <!-- <li class="menu__item"><a class="menu__link" href="#" target="_blank"> Главная</a></li>
                     <li class="menu__item"><a class="menu__link" href="#" target="_blank"> Уроки </a></li>
                     <li class="menu__item"><a class="menu__link" href="#" target="_blank"> Тесты </a></li>
-                    <li class="menu__item"> <a class="menu__link" href="#" target="_blank"> Домашняя работа </a></li>
-                    <li class="menu__btn"> Контакты</li>
-                </ul>
-            </nav>
-        </header>
-        <main class="main">
-            <div class="hero">
-                <div class="hero__info">
-                    <h2 class="hero__logo">history-mentor</h2>
-                    <h1 class="hero__logo">Онлайн - помощник учителя по истории.</h1>
-                    <p class="hero__text"> Уважаемый ученик, приветствую тебя на онлайн-платформе "history-mentor", где
-                        ты сможешь закрепить узученный на уроке материал, выполнить домашнее задание и узнать оценки за
-                        четверть.</p>
-                    <button class="hero__btn">Зарегистрироваться / Войти.</button>
-                </div>
-                <img class="hero__img" src="images/logo.png" alt="приветливая девочка">
-            </div>
-            <div class="cards">
-                <a href="#" class="cards__btn">Узнать больше</a>
-                <h2 class="cards__logo">Что будем изучать...</h2>
-                <div class="cards__wrap">
-                    <div class="cards__item">
-                        <h3 class="cards__name">Древняя Русь</h3>
-                        Согласно письменным источникам, подкреплённым археологическими открытиями последних десятилетий,
-                        истоки русской государственности восходят к середине IX века. «Повесть временных лет» связывает
-                        начало Руси с именем Рюрика – легендарного основателя династии Рюриковичей. В 862 году он пришёл
-                        с братьями и варяжской дружиной и «сел княжити» над словенами, кривичами, чудью и другими
-                        восточнославянскими и финно-угорскими племенами. Столицей его княжества стала Старая Ладога.
-                    </div>
-                    <div class="cards__item">
-                        <h3 class="cards__name">Московское Государство</h3>
-                        Одним из важнейших периодов в истории России было время Московского государства. Оно
-                        формировалось в течение XIV и XV столетий из разных удельных княжеств русской земли. С одной
-                        стороны, единое централизованное государство стало преемником распавшейся Киевской Руси, многое
-                        восприняв от нее. С другой стороны, Московское великое княжество, а затем царство, было новым
-                        политическим образованием.
-                        <div class="cards__item">
-                            <h3 class="cards__name">Российская Империя</h3>
-                            Образование Российской Империи случилось 22 октября 1721 года по старому стилю или 2 ноября.
-                            Именно в этот день последний российский царь Петр 1 Великий объявил себя императором
-                            российским. Случилось это, как одно из следствий северной войны, после которой сенат просил
-                            Петра 1 принять титул Императора страны. Государство получило название «Российская Империя».
-                            Ее столицей стал город Санкт-Петербург.
-                            <div class="cards__item">
-                                <h3 class="cards__name">СССР</h3>
-                                Образование СССР произошло 7 ноября 1917 года по новому стилю. Именно в этот день
-                                случилась Октябрьская Революция, которая свергла Временное правительство и плоды
-                                февральской революции, провозгласив лозунг о том, что власть должна принадлежать
-                                рабочим. Так образовался СССР, Союз Советских Социалистических Республик.
-                            </div>
-                            <div class="cards__item">
-                                <h3 class="cards__name">Российская Федерация</h3>
-                                Современная Российская Федерация (Россия) стала правопреемницей Советского Союза после
-                                его распада 25 декабря 1991 года. Она унаследовала от СССР статус великой державы и в
-                                новых реалиях продолжила более чем 1000-летнюю историю российской государственности.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cards__wrapper">
-                        <p class="cards__wrapper">Учитесь у лучшего учителя, профессионала своего дела.</p>
-                    </div>
-                    <div class="banner">
-                        <h3 class="banner__logo">Ялелутдинов Азат Ильдарович...</h3>
-                        <p class="banner__text"> Это учитель истории с многолетним опытом работы и огромным количеством
-                            достижений. Благодаря ему вы сможете изучать историю по новому. Новые технологии и самое
-                            современное оборудование, которые он применяет позволят вам более успешно овладевать
-                            историей и обществознанием. Плохих оценок больше не будет ни у кого.Присоединяйтесь к нам и
-                            изучайте историю с удовольствием. Поверьте, вам будет интересно! </p>
-                        <img class="banner__img" src="images/Teacher__Photo.jpg" alt="Мое фото. Честно,честно."
-                            height="300" width="600">
-                    </div>
-                </div>
-            </div>
-            <div class="features">
-                <div class="features__container">
-                    <h3 class="features__logo">Преимущества использования сайта.</h3>
-                    <p class="features__text"> Наш сайт позволит любому ученику первой школы получить удобный личный
-                        кабинет, с помощью которого он может отслеживать свой прогресс в изучении истории и
-                        обществознания.</p>
-                    <div class="features__info">
-                        <div class="features__item">
-                            <img class="features__icon" src="images/blocknote.png" alt="блокнот" height="50" width="50">
-                            <p class="features__text"> Тесты для закрепления</p>
-                            <img class="features__arrow" src="images/arrow.png" alt="стрелка" height="50" width="50">
-                        </div>
-                        <div class="features__item">
-                            <img class="features__icon" src="images/bag.png" alt="рюкзак" height="50" width="50">
-                            <p class="features__text"> Выполнение работы везде</p>
-                            <img class="features__arrow" src="images/arrow.png" alt="стрелка" height="50" width="50">
-                        </div>
-                        <div class="features__item">
-                            <img class="features__icon" src="images/five.png" alt="пятерочка" height="50" width="50">
-                            <p class="features__text">Отслеживание прогресса учебы</p>
-                            <img class="features__arrow" src="images/arrow.png" alt="стрелка" height="50" width="50">
-                        </div>
-                        <div class="features__item">
-                            <img class="features__icon" src="images/phone.png" alt="айфон" height="50" width="50">
-                            <p class="features__text">Прямой контакт с преподавателем</p>
-                            <img class="features__arrow" src="images/arrow.png" alt="стрелка" height="50" width="50">
-                        </div>
-                        <div class="features__item">
-                            <img class="features__icon" src="images/TV.png" alt="телек" height="50" width="50">
-                            <p class="features__text">Наглядное изложение темы</p>
-                            <img class="features__arrow" src="images/arrow.png" alt="стрелка" height="50" width="50">
-                        </div>
-                        <div class="features__item">
-                            <img class="features__icon" src="images/book.png" alt="книжечка" height="50" width="50">
-                            <p class="features__text">Много дополнительных заданий</p>
-                            <img class="features__arrow" src="images/arrow.png" alt="стрелка" height="50" width="50">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="wrapper">
-                <div class="wrapper__item">
-                    <h3 class="wrapper__logo">Присоединяйтесь к нам</h3>
-                    <p class="wrapper__text"> Нажмите зарегистрироваться и станьте частью нашего проекта уже сейчас.
-                    </p>
-                    <div class="wrapper__projects">
-                        <img class="wrapper__img__1" src="images/children__6.jpg" alt="Счасливые дети">
-                        <img class="wrapper__img" src="images/children__1.jpg" alt="Счасливые дети">
-                        <img class="wrapper__img" src="images/children__2.jpg" alt="Счасливые дети">
-                    </div>
-                    <div class="wrapper__projects">
-                        <img class="wrapper__img" src="images/children__5.jpg" alt="Счасливые дети">
-                        <img class="wrapper__img" src="images/children__3.jpg" alt="Счасливые дети">
-                        <img class="wrapper__img__1" src="images/children__7.jpg" alt="Счасливые дети">
-                    </div>
-                    <a href="#" class="wrapper__btn"> Зарегистрироваться</a>
-                </div>
-            </div>
-        </main>
-        <footer class="footer">
-            <div class="footer__container">
-                <div class="footer__div">
-                    <span class="footer__log">h-mentor.</span>
-                    <p class="footer__text">История по новому и с удовольствием.</p>
-                </div>
-                <div class="footer__div">
-                    <h4 class="footer__logo">О нас</h4>
-                    <ul class="footer__table">
-                        <li class="footer__element">Мы в соцсетях</li>
-                        <li class="footer__element"><img class="footer__icon" src="images/VK.png" alt="VK" width="30"
-                                height="30"></li>
-                        <li class="footer__element"><img class="footer__icon" src="images/telegram.png" alt="telegram"
-                                width="30" height="30"></li>
+                    <li class="menu__item"> <a class="menu__link" href="#" target="_blank"> Домашняя работа </a></li> 
+                    <li class="menu__btn"> Контакты</li> -->
                     </ul>
+                </nav>
+            </header>
+            <main class="main">
+                <div class="hero">
+                    <div class="hero__info">
+                        <h2 class="hero__logo">history-mentor</h2>
+                        <h1 class="hero__logo">Онлайн - помощник учителя по истории.</h1>
+                        <p class="hero__text"> Уважаемый ученик, приветствую тебя на онлайн-платформе "history-mentor",
+                            где
+                            ты сможешь закрепить узученный на уроке материал, выполнить домашнее задание и узнать оценки
+                            за
+                            четверть.</p>
+                        <button class="hero__btn">Зарегистрироваться / Войти.</button>
+                    </div>
+                    <img class="hero__img" src="images/logo.png" alt="приветливая девочка">
                 </div>
-                <div class="footer__div">
-                    <h4 class="footer__logo">Позвоните нам</h4>
-                    <p class="footer__text"> Номер телефона:</p>
-                    <p class="footer__text">8 800 555 35 35</p>
+                <div class="cards">
+                    <button class="cards__btn">Узнать больше</button>
+                    <div class="link" hidden>
+                        <section class="link__aplication">
+                            <div class="link_container">
+                                <div class="link_body">
+                                    <p class="link__text">Для того, чтобы узнать больше просканируйте QR.code нашей
+                                        группы в ВК :)</p>
+                                    <img class="link__img" src="images/qr.png" alt="Точно не вирусы">
+                                    <button class="link__btn" data-close type="button"> Мы в VK</button>
+                                </div>
+                                <div class="link__close">&#10006</div>
+                            </div>
+                        </section>
+                    </div>
+                    <h2 class="cards__logo">Что будем изучать...</h2>
+                    <div class="cards__wrap">
+                        <section class="cards__library">
+                            <ul class="cards__slider">
+                                <li class="cards__item">
+                                    <h3 class="cards__name">Древний мир</h3>
+                                    <img src="images/stone__era.jpg" alt="Древний мир" class="cards__img">
+                                    <p class="cards__text"> 3000 лет до н.э.</p>
+                                    <button class="cards__link" type="button">Подробнее</button>
+                                </li>
+                                <li class="cards__item">
+                                    <h3 class="cards__name">Античность</h3>
+                                    <img src="images/ancient__era.jpg" alt="Античность" class="cards__img">
+                                    <p class="cards__text">8 век до н.э. - 476 г н.э.</p>
+                                    <button class="cards__link" type="button">Подробнее</button>
+                                </li>
+                                <li class="cards__item">
+                                    <h3 class="cards__name">Средневековье</h3>
+                                    <img src="images/medieval__era.jpg" alt="Средневековье" class="cards__img">
+                                    <p class="cards__text"> 476 - 1453 год н.э.</p>
+                                    <button class="cards__link" type="button">Подробнее</button>
+                                </li>
+                                <li class="cards__item">
+                                    <h3 class="cards__name">Новое время</h3>
+                                    <img src="images/new__time.jpg" alt="Новое время" class="cards__image">
+                                    <p class="cards__text">1453 -1917 год н.э.</p>
+                                    <button class="cards__link" type="button">Подробнее</button>
+                                </li>
+                                <li class="cards__item">
+                                    <h3 class="cards__name">Новейщее время</h3>
+                                    <img src="images/Our__time.jpg" alt="Новейщее время" class="cards__img">
+                                    <p class="cards__text">1917 - 2025 год н.э.</p>
+                                    <button class="cards__link" type="button">Подробнее</button>
+                                </li>
+                    </div>
+                </div>
+                </section>
+                <div class="cards__wrapper">
+                    <p class="cards__wrapper">Учитесь у лучшего учителя, профессионала своего дела.</p>
+                </div>
+                <div class="banner">
+                    <h3 class="banner__logo">Ялелутдинов Азат Ильдарович...</h3>
+                    <p class="banner__text"> Это учитель истории с многолетним опытом работы и огромным количеством
+                        достижений. Благодаря ему вы сможете изучать историю по новому. Новые технологии и самое
+                        современное оборудование, которые он применяет позволят вам более успешно овладевать
+                        историей и обществознанием. Плохих оценок больше не будет ни у кого.Присоединяйтесь к нам и
+                        изучайте историю с удовольствием. Поверьте, вам будет интересно! </p>
+                    <img class="banner__img" src="images/Teacher__Photo.jpg" alt="Мое фото. Честно,честно." height="300"
+                        width="600">
+                </div>
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide"> <img class="swiper__img" src="images/reward__1.jpg" alt="награда"></div>
+                      <div class="swiper-slide"><img class="swiper__img" src="images/reward__2.jpg" alt="награда">></div>
+                      <div class="swiper-slide"><img class="swiper__img" src="images/reward__3.jpg" alt="награда"></div>
+                      <div class="swiper-slide"><img class="swiper__img" src="images/reward__4.jpg" alt="награда"></div>
+                      <div class="swiper-slide"><img class="swiper__img" src="images/reward__5.jpg" alt="награда"></div>
+                    </div>
+                    
+                  
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                  
+                    
+        </div>
+   
+    <div class="features">
+        <div class="features__container">
+            <h3 class="features__logo">Преимущества использования сайта.</h3>
+            <p class="features__text"> Наш сайт позволит любому ученику первой школы получить удобный личный
+                кабинет, с помощью которого он может отслеживать свой прогресс в изучении истории и
+                обществознания.</p>
+            <div class="features__info">
+                <div class="features__item">
+                    <img class="features__icon" src="images/blocknote.png" alt="блокнот" height="50" width="50">
+                    <p class="features__text"> Тесты для закрепления</p>
+                    <img class="features__arrow" src="images/arrow.png" alt="стрелка" height="50" width="50">
+                </div>
+                <div class="features__item">
+                    <img class="features__icon" src="images/bag.png" alt="рюкзак" height="50" width="50">
+                    <p class="features__text"> Выполнение работы везде</p>
+                    <img class="features__arrow" src="images/arrow.png" alt="стрелка" height="50" width="50">
+                </div>
+                <div class="features__item">
+                    <img class="features__icon" src="images/five.png" alt="пятерочка" height="50" width="50">
+                    <p class="features__text">Отслеживание прогресса учебы</p>
+                    <img class="features__arrow" src="images/arrow.png" alt="стрелка" height="50" width="50">
+                </div>
+                <div class="features__item">
+                    <img class="features__icon" src="images/phone.png" alt="айфон" height="50" width="50">
+                    <p class="features__text">Прямой контакт с преподавателем</p>
+                    <img class="features__arrow" src="images/arrow.png" alt="стрелка" height="50" width="50">
+                </div>
+                <div class="features__item">
+                    <img class="features__icon" src="images/TV.png" alt="телек" height="50" width="50">
+                    <p class="features__text">Наглядное изложение темы</p>
+                    <img class="features__arrow" src="images/arrow.png" alt="стрелка" height="50" width="50">
+                </div>
+                <div class="features__item">
+                    <img class="features__icon" src="images/book.png" alt="книжечка" height="50" width="50">
+                    <p class="features__text">Много дополнительных заданий</p>
+                    <img class="features__arrow" src="images/arrow.png" alt="стрелка" height="50" width="50">
                 </div>
             </div>
-            <hr class="footer__line">
-            <p class="footer__text">Copyright R 2025 ALL Rights Reserved </p>
-        </footer>
-        <script src="scripts/1__task.js"></script>
+        </div>
     </div>
+    <div class="wrapper">
+        <div class="wrapper__item">
+            <h3 class="wrapper__logo">Присоединяйтесь к нам</h3>
+            <p class="wrapper__text"> Нажмите зарегистрироваться и станьте частью нашего проекта уже сейчас.
+            </p>
+            <div class="wrapper__slider">
+                <button class="wrapper__left wrapper__button">
+                    <span>&#129044;</span>
+                </button>
+                <ul class="wrapper__list">
+                    <li class="wrapper__element">
+                        <img class="wrapper__img" src="./images/children__1.jpg" width="250" height="250"
+                            alt="Картинка 1">
+                        <div class="wrapper__description" hidden>
+                            Первая картинка, описывающая радостных детей.
+                        </div>
+                        </a>
+                    </li>
+                    <li class="wrapper__element">
+                        <img class="wrapper__img" src="./images/children__2.jpg" alt="Картинка 2">
+                        <div class="wrapper__description" hidden>
+                            Вторая картинка, описывающая радостных детей.
+                        </div>
+                        </a>
+                    </li>
+                    <li class="wrapper__element">
+                        <img class="wrapper__img" src="./images/children__3.jpg" alt="Картинка 3">
+                        <div class="wrapper__description" hidden>
+                            Третья картинка, описывающая радостных детей.
+                        </div>
+                        </a>
+                    </li>
+                    <li class="wrapper__element">
+                        <img class="wrapper__img" src="./images/children __4.jpg" alt="Картинка 4">
+                        <div class="wrapper__description" hidden>
+                            Четвертая картинка, описывающая радостных детей.
+                        </div>
+                        </a>
+                    <li class="wrapper__element">
+                        <img class="wrapper__img" src="./images/children__5.jpg" alt="Картинка 5">
+                        <div class="wrapper__description" hidden>
+                            Пятая картинка, описывающая радостных детей.
+                        </div>
+                        </a>
+                    </li>
+                    <li class="wrapper__element">
+                        <img class="wrapper__img" src="./images/children__8.jpg" alt="Картинка 6">
+                        <div class="wrapper__description" hidden>
+                            Шестая картинка, описывающая радостных детей.
+                        </div>
+                        </a>
+                    </li>
+                </ul>
+                <button class="wrapper__right wrapper__button">
+                    <span>&#10132;</span>
+                </button>
+            </div>
+            </section>
+
+            <a href="#" class="wrapper__btn"> Зарегистрироваться</a>
+        </div>
+    </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__div">
+                <span class="footer__log">h-mentor.</span>
+                <p class="footer__text">История по новому и с удовольствием.</p>
+            </div>
+            <div class="footer__div">
+                <h4 class="footer__logo">О нас</h4>
+                <ul class="footer__table">
+                    <li class="footer__element">Мы в соцсетях</li>
+                    <li class="footer__element"><img class="footer__icon" src="images/VK.png" alt="VK" width="30"
+                            height="30"></li>
+                    <li class="footer__element"><img class="footer__icon" src="images/telegram.png" alt="telegram"
+                            width="30" height="30"></li>
+                </ul>
+            </div>
+            <div class="footer__div">
+                <h4 class="footer__logo">Позвоните нам</h4>
+                <p class="footer__text"> Номер телефона:</p>
+                <p class="footer__text">8 800 555 35 35</p>
+            </div>
+        </div>
+        <hr class="footer__line">
+        <p class="footer__text">Copyright R 2025 ALL Rights Reserved </p>
+    </footer>
+    <div class="dialog dialog--layout" hidden>
+        <div class="dialog__content">
+            <button class="popup__close" type="button" data-close><img src="images/close.svg" alt="Закрыть окно"
+                    width="24" height="24"></button>
+            <!-- Форма "Войдите в профиль" -->
+            <section class="popup" id="popup-select">
+                <h2 class="popup__title">Войдите в профиль</h2>
+                <p class="popup__desc">Для продолжения работы на сайте зарегистрируйтесь</p>
+                <div class="popup__buttons">
+                    <button class="button button--accent" type="button" data-login>Войти</button>
+                    <button class="button" type="button" data-registration>Регистрация</button>
+                </div>
+            </section>
+            <!--/ Форма "Войдите в профиль" -->
+            <!-- Форма "Регистрация" -->
+            <section class="popup" id="popup-registration" hidden>
+                <h2 class="popup__title popup__title--registration">Регистрация</h2>
+                <form class="popup__form form" action="/" method="post" id="registration-form">
+                    <input class="form__field" type="text" name="username" placeholder="Имя" id="username" required>
+                    <input class="form__field" type="text" name="login" placeholder="Логин" id="login" required>
+                    <input class="form__field" type="email" name="email" placeholder="Адрес электронной почты"
+                        id="email" required>
+                    <fieldset class="form__fieldset">
+                        <div class="form__field-block">
+                            <input class="form__field" type="password" name="password" placeholder="Пароль"
+                                id="password" required>
+                            <span class="form__field-alert">Минимум 8 символов</span>
+                        </div>
+                        <input class="form__field" type="password" name="repeat-password" placeholder="Повторите пароль"
+                            id="confirm-password" required>
+                    </fieldset>
+                    <p id="error-message" class="error-message"></p>
+                    <fieldset class="form__buttons">
+                        <button class="button button--accent" type="submit">Зарегистрироваться</button>
+                        <button class="button button--close" data-close type="button">Отмена</button>
+                    </fieldset>
+                    <button class="button button--link" data-login type="button">У меня уже есть аккаунт</button>
+                </form>
+            </section>
+            <!--/ Форма "Регистрация" -->
+            <!-- Форма "Войти" -->
+            <section class="popup" id="popup-login" hidden>
+                <h2 class="popup__title">Войти</h2>
+                <form class="popup__form form" action="/" method="post">
+                    <input class="form__field" type="text" name="login" placeholder="Логин" required>
+                    <input class="form__field" type="password" name="current-password" placeholder="Пароль" required>
+                    <fieldset class="form__buttons">
+                        <button class="button button--accent" type="submit">Войти</button>
+                        <button class="button button--close" data-close type="button">Отмена</button>
+                    </fieldset>
+                    <button class="button button--link" data-registration type="button">У меня еще нет
+                        аккаунта</button>
+                </form>
+            </section>
+        </div>
+    </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="scripts/swiper.js"></script>
+    <script src="scripts/Preloader.js"></script>
+    <script src="scripts/1__task.js"></script>
+    <script src="scripts/registrathion.js"></script>
+    <script src="scripts/slider.js"></script>
+    <script src="scripts/popup.js"></script>
+    <script src="scripts/massive.js"></script>
+    <script src="scripts/cards.js"></script>
+    <script src="scripts/test.js"></script>
 </body>
 
 </html>

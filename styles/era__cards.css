@@ -1,0 +1,32 @@
+.cards__slider{
+    width: 1350px;
+    margin-top: 60px;
+    display: flex;
+    gap: 40px;
+    overflow: hidden;
+    list-style: none;
+}
+
+.cards__img{
+    min-width: 200px;
+    height: 200px;
+    border-radius: 20px;
+}
+
+.cards__image{
+    width: 270px;
+    height: 200px;
+    border-radius: 20px;
+}
+
+.cards__item{
+    width: 235px;
+    transition: 0.3 ease;
+}
+
+.cards__link{
+    border: none;
+    margin-top: 20px;
+    color: rgb(16,181,130);
+    cursor: pointer;
+}

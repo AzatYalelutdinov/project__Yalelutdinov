@@ -10,7 +10,7 @@ const body = document.body;
 *   3.1. Если мы нажимаем на кнопку регистрация ('signup-btn') блоку формы ('form-box') добавляется класс "active".
 *      3.2. Если мы нажимаем на кнопку входа ('signin-btn') класс "active" удаляется из блока формы ('form-box').
 * 4. Конец.
-* Блок-схема: https://excalidraw.com/#json=rokU1lQUTdIw-lKngnir9,XmYNoXzWE3HDISJtYl1PkQ
+* Блок-схема: "/images/Block__diagram.png"
 */
 signUpBtn.addEventListener('click', function () {       // навешиваем слушатель событий click на кнопку регистрации  и устанавливаем модификатор 'active' на элемент ('form-box')
     formBox.classList.add('active');

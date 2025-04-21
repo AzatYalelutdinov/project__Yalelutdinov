@@ -1,3 +1,7 @@
+  /* Дизайн загрузки*/
+  @import "preloader.css";
+ /* Анимация загрузки */
+ @import "animathion.css";
  /* Подключение стилей относящихся к header */
 @import"header.css";
  /* Подключение стилей относящихся к main */
@@ -12,3 +16,17 @@
   @import"footer.css";
  /* Адаптивный дизайн */
 @import"adaptability.css";
+ /* Адаптивный дизайн */
+ @import"slider.css";
+ /* Дизайн для всплывающего окна */
+ @import"popup.css";
+ /* Дизайн для карточек с эрами*/
+ @import"era__cards.css";
+ /* Дизайн для карточек с тестами */
+ @import"tests.css";
+ /* Дизайн панельки регистрации и входа */
+ @import"registrathion.css";
+ /* Дизайн форм регистрации*/
+ @import"forms.css";
+/* Дизайн слайдера в библиотеке */
+@import"swiper.css";

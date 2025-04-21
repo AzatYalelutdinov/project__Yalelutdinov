@@ -24,7 +24,9 @@ img {
 .wrapper{
     background: rgb(16,181,130);
     background: linear-gradient(90deg, rgba(16,181,130,1) 100%, rgba(43,8,255,1) 100%, rgba(0,18,255,1) 100%);
-    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+
 }
 /* Контейнер презентации сайта */
 .hero{
@@ -109,7 +111,7 @@ img {
 
 .banner__img{
     position: absolute;
-    top: 1400px;
+    top: 1350px;
     right: 30px;
     border-radius: 30px;
 }
@@ -144,3 +146,4 @@ img {
     cursor: pointer;
     transform: scale(1.1);
 }
+

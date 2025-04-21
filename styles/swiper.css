@@ -1,0 +1,17 @@
+.swiper {
+    width: 1200px;
+    height: 300px;
+  }
+
+.swiper__img{
+  height: 300px;
+  width: 500px;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #fdb100;
+}

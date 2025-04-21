@@ -94,6 +94,7 @@ body.active{
     padding: 50px;
     font-size: 16px;
     position: absolute;
+    transition: 0.5s;
 }
 
 .form__title{
@@ -128,7 +129,23 @@ body.active{
 }
 .form__signin{
     left: 0;
+    transition-delay: 0.25s;
 }
 .form__signup{
     left: 100%;
+    transition-delay: 0s;
 }
+
+.form-box.active .form__signin{
+    left:-100%;
+    transition-delay: 0s;
+}
+
+.form-box.active .form__signup{
+    left: 0;
+    transition-delay: 0.25s;
+}
+
+ 
+    
+ 
